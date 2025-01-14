@@ -1,0 +1,149 @@
+body{ 
+    padding: 0;
+    margin: 0;
+    font-family: "Kaisei Decol", serif;
+}
+
+section.left{
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.left>nav#fixed{
+    width: 80%;
+    height: 80%;
+    font-size: 1.5vw;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.left>nav#fixed a{
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+section.left>nav#fixed a:visited{
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+section.right{
+    width: 80vw;
+    margin-left: 20vw;
+}
+
+section.right>div.hero{
+    width: 100%;
+    height: 33vw;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.right>div.hero>h1{
+    padding: 0;
+    margin: 0;
+    font-size: 7vw;
+}
+
+div.card-sections{
+    width: 100%;
+  
+}
+
+div.card{
+    width: 90%;
+    display: flex;
+    margin: 3rem auto 0 auto;
+    flex-direction: column;
+}
+
+div.card>h3{
+    font-size: 1.5rem;
+}
+
+div.card-group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.card-group h4{
+    font-size: 2rem;
+}
+
+div.flip-card-prosodia1 {
+    background-color: transparent;
+    width: 25%;
+    height: 25vw;
+    perspective: 1000px;
+}
+
+div.flip-card-innerp1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+div.flip-card-prosodia1:hover .flip-card-innerp1{
+    transform: rotateX(-180deg);
+}
+
+div.flip-card-frontp1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+div.flip-card-backp1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    
+}
+
+div.flip-card-frontp1 {
+    background-color: #343A40;
+    color: #ffff;
+}
+
+div.flip-card-backp1 {
+    background-color: #495057;
+    color: #ffff;
+}
+
+div.flip-card-backp1>h4{
+    font-size: 1.5rem;
+    width: 90%;
+}
